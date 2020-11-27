@@ -1,0 +1,108 @@
+{
+  "c_2267898b783a00d4917cf1f13c1e3a76": {
+    "collection": "categories",
+    "query": {
+      "limit": "6",
+      "sort": [],
+      "expand": []
+    }
+  },
+  "c_5f22420f45d3a4866a73222cf6ce9689": {
+    "collection": "blog",
+    "query": {
+      "fields": [
+        {
+          "fieldPath": "is-this-featured",
+          "operatorName": "eq",
+          "value": "true"
+        }
+      ],
+      "limit": "2",
+      "sort": [
+        "-created-on"
+      ],
+      "expand": [
+        "authors",
+        "category"
+      ]
+    }
+  },
+  "c_1efa7524ddd0e3dc696efb9ce3326c8b": {
+    "collection": "blog",
+    "query": {
+      "limit": 8,
+      "fields": [
+        {
+          "fieldPath": "is-this-featured",
+          "operatorName": "ne",
+          "value": "true"
+        }
+      ],
+      "sort": [
+        "-created-on"
+      ]
+    }
+  },
+  "c_258edd827c2fff4c12b8c3ddd4b38997": {
+    "collection": "blog",
+    "query": {
+      "fields": [
+        {
+          "fieldPath": "category",
+          "operatorName": "eq",
+          "value": "DYN_CONTEXT"
+        }
+      ],
+      "limit": 8,
+      "sort": [
+        "-created-on"
+      ]
+    }
+  },
+  "c_4f002e6394e466f79984aeebcaa36bf1": {
+    "collection": "categories"
+  },
+  "c_24856c1a2bff76fd7468ad52ffddbe77": {
+    "collection": "blog",
+    "query": {
+      "limit": "4",
+      "fields": [
+        {
+          "fieldPath": "authors",
+          "operatorName": "eq",
+          "value": "DYN_CONTEXT"
+        }
+      ],
+      "sort": [
+        "-created-on"
+      ],
+      "expand": [
+        "authors",
+        "category"
+      ]
+    }
+  },
+  "c_304b5754c2441292c380deffd0a38cc5": {
+    "collection": "blog",
+    "query": {
+      "fields": [
+        {
+          "fieldPath": "category",
+          "operatorName": "eq",
+          "value": "DYN_CONTEXT.category"
+        }
+      ],
+      "limit": "8",
+      "sort": [
+        "-created-on"
+      ],
+      "expand": [
+        "authors",
+        "category"
+      ]
+    }
+  },
+  "c_df9621f1c9030e689dd088f81fcd95ce": {
+    "collection": "categories"
+  }
+}

@@ -1,11 +1,11 @@
-<!doctype html><html data-wf-page="5fc15c843f21728d0a75e4cf" data-wf-site="5fc15c84b30cf9bc397cb7ae"><head><style>html{visibility: hidden;opacity:0;}</style>{%- assign item = page | getCurrentPageItem -%}{%- assign pageItem = item -%}
+<!doctype html><html data-wf-page="60079b9e4b141f855a34ad0c" data-wf-site="60079b9dbdea1142645ca665"><head><style>html{visibility: hidden;opacity:0;}</style>{%- assign item = page | getCurrentPageItem -%}{%- assign pageItem = item -%}
   <meta charset="utf-8">
   
   <meta content="width=device-width, initial-scale=1" name="viewport">
   
   <link href="/static/css/normalize.css" rel="preload" type="text/css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
   <link href="/static/css/webflow.css" rel="preload" type="text/css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
-  <link href="/static/css/test-udesly-jamstack.webflow.css" rel="preload" type="text/css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
+  <link href="/static/css/jamstack-test.webflow.css" rel="preload" type="text/css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript" async="" defer="" onload="_lfnts()"></script>
   <script type="text/javascript">function _lfnts() { WebFont.load({  google: {    families: ["Lora:regular,italic,700","Oxygen:300,regular,700"]  }}); }</script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
@@ -42,7 +42,7 @@
     </div>
     <div class="category-section">
       <div class="w-container">
-        {%- assign collectionId = "main" -%}{%- assign collection = collections["c_2267898b783a00d4917cf1f13c1e3a76"][collectionId] | limit: 6 -%}<div class="w-dyn-list">
+        {%- assign collectionId = "main" -%}{%- assign collection = collections["4af4af41"][collectionId] | limit: 6 -%}<div class="w-dyn-list">
           {%- if collection.length > 0 -%}<div role="list" class="w-clearfix w-dyn-items w-row">
             {%- for item in collection -%}<div role="listitem" class="category-wrapper w-dyn-item w-col w-col-2">
               <a href="{{ item.url }}" class="category-link">{{ item.data.name }}</a>
@@ -60,7 +60,7 @@
           <h2 class="section-title">Featured Posts</h2>
           <div class="med-divider"></div>
         </div>
-        {%- assign collectionId = "main" -%}{%- assign collection = collections["c_5f22420f45d3a4866a73222cf6ce9689"][collectionId] | limit: 2 -%}<div class="w-dyn-list">
+        {%- assign collectionId = "main" -%}{%- assign collection = collections["-5cff1694"][collectionId] | limit: 2 -%}<div class="w-dyn-list">
           {%- if collection.length > 0 -%}<div role="list" class="w-clearfix w-dyn-items w-row">
             {%- for item in collection -%}<div role="listitem" class="featuredthumbnail w-dyn-item w-col w-col-6">
               <a href="{{ item.url }}" data-w-id="3c1b0055-dd47-cc77-5812-26c30ac7c948" class="featured-wrapper w-inline-block">
@@ -72,7 +72,7 @@
                   <div class="featured-title">{{ item.data.name }}</div>
                   <div class="featured-description">{{ item.data['post-decription'] }}</div>
                   <div class="featured-details">
-                    <div class="w-clearfix">{%- assign ref = item | resolveReference: "authors", "authors" -%}<img src="{{ ref.data.picture.url | escape }}" alt="" class="author-img">
+                    <div class="w-clearfix">{%- assign ref = item | resolveReference: "authors", "authors" -%}<img src="{{ ref.data.picture.url | escape }}" alt="{{ ref.data.picture.alt | escape }}" class="author-img">
                       {%- assign ref = item | resolveReference: "authors", "authors" -%}<div class="author-title lite">{{ ref.data.name }}</div>
                       {%- assign ref = item | resolveReference: "authors", "authors" -%}<div class="thumbnail-date lite">{{ ref.data['created-on'] | formatDate: "MMMM D, YYYY" }}</div>
                     </div>
@@ -91,7 +91,7 @@
           <h2 class="section-title">Most Recent</h2>
           <div class="med-divider"></div>
         </div>
-        {%- assign collectionId = "main" -%}{%- assign collection = collections["c_1efa7524ddd0e3dc696efb9ce3326c8b"][collectionId] | limit: 8 -%}<div class="w-dyn-list">
+        {%- assign collectionId = "main" -%}{%- assign collection = collections["-52ca7021"][collectionId] | limit: 8 -%}<div class="w-dyn-list">
           {%- if collection.length > 0 -%}<div role="list" class="w-clearfix w-dyn-items w-row">
             {%- for item in collection -%}<div role="listitem" class="blog-thumbnail w-dyn-item w-col w-col-4">
               <a href="{{ item.url }}" data-w-id="46150442-4efa-9d36-3a4c-20d527e7a6bc" class="thumbnail-wrapper w-inline-block">
@@ -103,7 +103,7 @@
                   <div class="blog-title">{{ item.data.name }}</div>
                   <div class="preview-text">{{ item.data['post-decription'] }}</div>
                 </div>
-                <div class="thumb-details w-clearfix">{%- assign ref = item | resolveReference: "authors", "authors" -%}<img src="{{ ref.data.picture.url | escape }}" alt="" class="author-img">
+                <div class="thumb-details w-clearfix">{%- assign ref = item | resolveReference: "authors", "authors" -%}<img src="{{ ref.data.picture.url | escape }}" alt="{{ ref.data.picture.alt | escape }}" class="author-img">
                   {%- assign ref = item | resolveReference: "authors", "authors" -%}<div class="author-title">{{ ref.data.name }}</div>
                   <div class="thumbnail-date">{{ item.data['created-on'] | formatDate: "M/D/YYYY" }}</div>
                 </div>

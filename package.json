@@ -1,5 +1,5 @@
 {
-  "name": "test-udesly-jamstack-udy-theme",
+  "name": "jamstack-test-udy-theme",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "glob": "^7.1.6",

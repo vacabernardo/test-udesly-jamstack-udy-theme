@@ -6,18 +6,18 @@ staticDir: "static"
 uploadDir: "images"
 pagesDir: "site"
 metadata:
-  title: "test udesly jamstack"
+  title: "jamstack test"
   description: "Theme created in Webflow and converted with Udesly"
 models:
   authors:
     type: "page"
     label: "Authors"
     urlPath: "/authors/{slug}"
-  categories:
-    type: "page"
-    label: "Categories"
-    urlPath: "/categories/{slug}"
   blog:
     type: "page"
     label: "Blog Posts"
     urlPath: "/blog/{slug}"
+  categories:
+    type: "page"
+    label: "Categories"
+    urlPath: "/categories/{slug}"
